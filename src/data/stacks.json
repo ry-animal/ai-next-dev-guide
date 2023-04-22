@@ -1,0 +1,51 @@
+{
+    "react": {
+        "href": "/chat/react",
+        "logo": "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+        "info": "React is an open-source JavaScript library developed by Facebook, widely used for building user interfaces, especially single-page applications. React enables developers to create reusable UI components and efficiently update the DOM through its virtual DOM implementation. It promotes the use of a unidirectional data flow and a component-based architecture, making it easier to manage the state and structure of large applications.",
+        "docs": "https://react.dev",
+        "name": "react",
+        "hoverClass": "hover:border-blue-300"
+        
+    },
+    "svelte": {
+        "href": "/chat/svelte",
+        "logo": "https://cdn.worldvectorlogo.com/logos/svelte-1.svg",
+        "info": "Svelte is an innovative JavaScript framework for building user interfaces that compiles your code to highly efficient JavaScript during the build process. It allows you to write clean and declarative code, making it easier to maintain and understand. With its unique approach, Svelte avoids the runtime overhead typical of other frameworks, resulting in a smaller bundle size and faster performance.",
+        "docs": "https://svelte.dev",
+        "name": "svelte",
+        "hoverClass": "hover:border-red-300"
+    },
+    "solidity": {
+        "href": "/chat/solidity",
+        "logo": "https://cdn.worldvectorlogo.com/logos/solidity.svg",
+        "info": "Solidity is a high-level, statically typed programming language designed for writing smart contracts on Ethereum-based blockchain platforms. It is influenced by languages like JavaScript, C++, and Python, but tailored for creating decentralized applications (dApps) on the Ethereum Virtual Machine (EVM). Solidity features a strong type system, inheritance, and contract-oriented programming, which allows developers to build secure and reliable blockchain applications.",
+        "docs": "https://solidity.readthedocs.io",
+        "name": "solidity",
+        "hoverClass": "hover:border-black"
+    },
+    "rust": {
+        "href": "/chat/rust",
+        "logo": "https://cdn.worldvectorlogo.com/logos/rust.svg",
+        "info": "Rust is a systems programming language that emphasizes safety, concurrency, and performance. Developed by Mozilla, Rust is designed to prevent common programming errors like null pointer dereferences and buffer overflows, while still offering low-level control over system resources. Rust's strong static typing and ownership model ensures memory safety and thread safety, making it suitable for building complex, concurrent systems without a garbage collector.",
+        "docs": "https://doc.rust-lang.org",
+        "name": "rust",
+        "hoverClass": "hover:border-black"
+    },
+    "go": {
+        "href": "/chat/go",
+        "logo": "https://cdn.worldvectorlogo.com/logos/golang-gopher.svg",
+        "info": "Go is an open-source programming language created by Google that focuses on simplicity, efficiency, and concurrency. It is statically typed and compiled, making it well-suited for building high-performance server-side applications. Go's syntax is inspired by the C programming language, but it incorporates modern features like garbage collection, strong typing, and a rich standard library. Go's unique concurrency model, based on goroutines and channels, makes it easy to develop scalable and maintainable applications.",
+        "docs": "https://golang.org",
+        "name": "go",
+        "hoverClass": "hover:border-blue-300"
+    },
+    "oshi": {
+        "href": "/chat/oshi",
+        "logo": "/oshi.jpeg",
+        "info": "Oshi, blockchain explorer.",
+        "docs": "https://oshisjourney.com",
+        "name": "oshi",
+        "hoverClass": "hover:border-black"
+    }
+}
