@@ -4,8 +4,16 @@ import { Message } from "@/components/Message";
 import { Prompt } from "@/components/Prompt";
 import { useState, useRef, useEffect } from "react";
 
+const SESSION_KEYS = [
+    "u1-2023-04-13T15:00:00.000Z",
+    "u1-2023-04-13T15:01:00.000Z",
+    "u1-2023-04-13T15:02:00.000Z",
+    "u1-2023-04-13T15:03:00.000Z",
+];
+
 export default function Stack({stack, stackKey}) {
     const [messages, setMessages] = useState([]);
+    const [activeSession, setActiveSession] = useState("");
     const chatRef = useRef(null);
 
     useEffect(() => {
@@ -62,9 +70,27 @@ export default function Stack({stack, stackKey}) {
         }
     }
 
+    const handleSessionChange = (e) => {
+        const session = e.target.value;
+
+        if(!session) {
+            console.warn("Not valid session");
+            return;
+        }
+
+        setActiveSession(session);
+    };
+
     return (
-       <div className="h-full flex flex-col">
+       <div className="h-full flex flex-col ">
         <Header logo={stack.logo} info={stack.info} />
+        <div className="mt-4">Active session: {activeSession}</div>
+        <select onChange={handleSessionChange} className="bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg w-full p-3 mt-5">
+            <option value="">Choose session</option>
+            {SESSION_KEYS.map((sk) => (
+                <option key={sk} value={sk}>{sk}</option>
+            ))}
+        </select>
         <hr className="my-4" />
         <div ref={chatRef} className="flex flex-col h-full overflow-scroll gap-2">
             {messages.map((message, idx) => (
