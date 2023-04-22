@@ -1,7 +1,7 @@
-import { Header } from "@/components/header";
+import { Header } from "@/components/Header";
 import stacks from "@/data/stacks.json";
-import { Message } from "@/components/message";
-import { Prompt } from "@/components/prompt";
+import { Message } from "@/components/Message";
+import { Prompt } from "@/components/Prompt";
 import { useState, useRef, useEffect } from "react";
 
 export default function Stack({stack, stackKey}) {
