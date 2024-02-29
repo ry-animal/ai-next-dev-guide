@@ -2,7 +2,7 @@ repo_name: ry-animal/ai-next-dev-guide
 report_id: 3e3af8ac781d121c5169ec1f46b056dc
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:14:25+00:00'
+timestamp: '2024-02-29T18:15:33+00:00'
 requested_by: ry-animal
 provider: github
 branch: main
@@ -42,7 +42,7 @@ tools:
   last_updated_by: Ryan Van Valkenburg
   last_updated_on: 2023-04-22 21:42:33.000000000 Z
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 13.3.0
   open_source: true
